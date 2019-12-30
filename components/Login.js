@@ -41,7 +41,7 @@ export default class Main extends Component {
 		return (
 			<LinearGradient
 				style={styles.container} colors={['#FF9F81','#FF7373']}>
-				<TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Setting')}><Text>이메일로 로그인</Text></TouchableOpacity>
+				<TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Menu')}><Text>이메일로 로그인</Text></TouchableOpacity>
 				<TouchableOpacity style={styles.button}><Text>페이스북 계정으로 로그인</Text></TouchableOpacity>
 				<TouchableOpacity style={styles.button}><Text>구글 계정으로 로그인</Text></TouchableOpacity>
 				<View style={styles.inner}>

@@ -77,34 +77,34 @@ export default class Main extends Component {
 					</Text>
 				</View>
 				<View style={styles.inner}>
-					<View style={styles.con}>
+					<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('Main')}>
 						<Text style={styles.main_inner}>
 							00
 						</Text>
 						<Text style={styles.sub_inner}>
 							구조내역
 						</Text>
-					</View>
-					<View style={styles.con}>
+					</TouchableOpacity>
+					<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('Health')}>
 						<Image style={styles.main_inner} source={ require('./menu1.png') } />
 						<Text style={styles.sub_inner}>
 							건강상태
 						</Text>
-					</View>
+					</TouchableOpacity>
 				</View>
 				<View style={styles.inner}>
-					<View style={styles.con}>
+					<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('Help')}>
 						<Image style={styles.main_inner} source={ require('./menu2.png') } />
 						<Text style={styles.sub_inner}>
 							응급처치 메뉴얼
 						</Text>
-					</View>
-					<View style={styles.con}>
+					</TouchableOpacity>
+					<TouchableOpacity style={styles.con}>
 						<Image style={styles.main_inner} source={ require('./menu3.png') } />
 						<Text style={styles.sub_inner}>
 							설정
 						</Text>
-					</View>
+					</TouchableOpacity>
 				</View>
 			</View>
 		);

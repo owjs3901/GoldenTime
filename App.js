@@ -6,17 +6,21 @@ import {createAppContainer} from 'react-navigation';
 
 import login from './components/Login';
 import register from './components/Register';
-import setting from './components/Setting';
+import menu from './components/Menu';
 import main from './components/Main';
+import helplist from './components/HelpList';
+import healthState from './components/HealthState';
 
 const App = createStackNavigator(
 	{
 		Home: {screen: login},
 		Register: {screen: register},
-		Setting: {screen: setting},
+		Menu: {screen: menu},
 		Main: {screen: main},
+		Help: {screen: helplist},
+		Health: {screen: healthState},
 	},
-	{initialRouteName: 'Setting', headerMode: 'none'},
+	{initialRouteName: 'Home', headerMode: 'none'},
 );
 
 
