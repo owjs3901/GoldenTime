@@ -57,10 +57,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 	},
 	main_inner: {
-		fontSize: 70,
 		width: 88,
 		height: 88,
-		color: '#FF7373',
 	},
 	sub_inner: {
 		fontSize: 10,

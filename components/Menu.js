@@ -55,10 +55,13 @@ const styles = StyleSheet.create({
 		justifyContent:'center'
 	},
 	main_inner: {
-		fontSize:70,
+		width:88,
+		height:88,
+	},main_text: {
 		width:88,
 		height:88,
 		color:'#FF7373',
+		fontSize:70,
 	},
 	sub_inner: {
 		fontSize: 10
@@ -78,7 +81,7 @@ export default class Main extends Component {
 				</View>
 				<View style={styles.inner}>
 					<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('Main')}>
-						<Text style={styles.main_inner}>
+						<Text style={styles.main_text}>
 							00
 						</Text>
 						<Text style={styles.sub_inner}>
