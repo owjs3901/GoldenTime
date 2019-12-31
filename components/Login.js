@@ -8,7 +8,7 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View,Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 
@@ -32,15 +32,20 @@ const styles = StyleSheet.create({
 		width: 250,
 		flexDirection: 'row',
 	},
+	title: {
+		width: 126,
+		height: 126,
+		marginBottom:  100
+	},
 });
 
 export default class Main extends Component {
 	render() {
 		const navigation = this.props;
-		console.log("www"+JSON.stringify(navigation))
 		return (
 			<LinearGradient
 				style={styles.container} colors={['#FF9F81','#FF7373']}>
+				<Image style={styles.title} source={require('./title.png')}/>
 				<TouchableOpacity style={styles.button} onPress={()=>this.props.navigation.navigate('Menu')}><Text>이메일로 로그인</Text></TouchableOpacity>
 				<TouchableOpacity style={styles.button}><Text>페이스북 계정으로 로그인</Text></TouchableOpacity>
 				<TouchableOpacity style={styles.button}><Text>구글 계정으로 로그인</Text></TouchableOpacity>

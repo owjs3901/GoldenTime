@@ -12,6 +12,8 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 
+var bpm=0
+
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
@@ -54,7 +56,7 @@ export default class Main extends Component {
 					</Text>
 					<View style={{flexDirection: 'row'}}>
 						<Text style={{color:'white',fontSize:80}}>
-							85
+							{bpm}
 						</Text>
 						<View style={{justifyContent:'flex-end'}}>
 							<Text style={{color:'white',fontSize:15,paddingBottom:20,marginLeft:10}}>
