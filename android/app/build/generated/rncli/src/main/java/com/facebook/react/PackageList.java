@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import com.goldentime.BuildConfig;
 import com.goldentime.R;
 
+// react-native-background-timer
+import com.ocetnik.timer.BackgroundTimerPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-linear-gradient
@@ -67,6 +69,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new BackgroundTimerPackage(),
       new RNGestureHandlerPackage(),
       new LinearGradientPackage(),
       new ReanimatedPackage(),

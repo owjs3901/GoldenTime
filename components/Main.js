@@ -10,9 +10,17 @@
 import React, {Component} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
-
-var bpm=0
+import BackgroundTimer from 'react-native-background-timer';
+/*
+req({
+	uri: 'https://mbs-db.firebaseapp.com/test1',
+	method: 'GET',
+	headers: {
+		'Accept-Charset': 'utf-8'
+	}
+}, function(err, res, body){
+	console.log(body);
+});*/
 
 const styles = StyleSheet.create({
 	container: {
@@ -45,6 +53,20 @@ const styles = StyleSheet.create({
 });
 
 export default class Main extends Component {
+	constructor(props) {
+		super(props);
+		this.state={bpm:-1}
+		const intervalId = BackgroundTimer.setInterval(() => {
+			fetch('https://mbs-db.firebaseapp.com/test1',{
+				method:'GET',
+				headers: {
+					Accept: 'application/json',
+					'Content-Type': 'application/json',
+				}
+			}).then(res=>res.text()).then(r=>this.setState({bpm:r}))
+		}, 2000);
+	}
+
 	render() {
 		return (
 			<View>
@@ -56,7 +78,7 @@ export default class Main extends Component {
 					</Text>
 					<View style={{flexDirection: 'row'}}>
 						<Text style={{color:'white',fontSize:80}}>
-							{bpm}
+							{this.state.bpm}
 						</Text>
 						<View style={{justifyContent:'flex-end'}}>
 							<Text style={{color:'white',fontSize:15,paddingBottom:20,marginLeft:10}}>

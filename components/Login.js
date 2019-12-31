@@ -10,7 +10,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View,Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-
+import BackgroundTimer from 'react-native-background-timer';
 
 const styles = StyleSheet.create({
 	container: {

@@ -5,6 +5,7 @@ INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest
 INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml:1:1-26:12
 MERGED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-background-timer] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:react-native-gesture-handler] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-svg] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -137,6 +138,8 @@ uses-sdk
 INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\M\Desktop\GoldenTime\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-background-timer] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
@@ -233,3 +236,7 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from C:\Users\M\Desktop\GoldenTime\android\app\src\debug\AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from C:\Users\M\Desktop\GoldenTime\android\app\src\debug\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-background-timer] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [:react-native-background-timer] C:\Users\M\Desktop\GoldenTime\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-65
