@@ -51,12 +51,14 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 });
-
+var intervalId=undefined
 export default class Main extends Component {
 	constructor(props) {
 		super(props);
 		this.state={bpm:-1}
-		const intervalId = BackgroundTimer.setInterval(() => {
+		if(intervalId)
+			BackgroundTimer.clearInterval(intervalId)
+		intervalId = BackgroundTimer.setInterval(() => {
 			fetch('https://mbs-db.firebaseapp.com/test1',{
 				method:'GET',
 				headers: {
