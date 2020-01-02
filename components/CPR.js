@@ -74,7 +74,7 @@ export default class Main extends Component {
 						<Text style={{color: '#FF7373', fontSize: 20}}> &lt; </Text>
 					</TouchableOpacity>
 					<View style={{flex:2,alignItems:'center'}}>
-						<Text style={{color: 'black', fontSize: 20}}>응급처치 메뉴얼</Text>
+						<Text style={{color: 'black', fontSize: 20}}>심폐소생술 (CPR)</Text>
 					</View>
 					<View style={{flex:1}}>
 					</View>
@@ -92,7 +92,7 @@ export default class Main extends Component {
 						<TouchableOpacity style={styles.con}>
 							<Image style={styles.main_inner} source={require('./aed.png')}/>
 							<Text style={styles.sub_inner}>
-								자동제세동기 (AED)
+								자동제세동기
 							</Text>
 						</TouchableOpacity>
 					</View>
