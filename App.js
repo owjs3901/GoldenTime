@@ -10,6 +10,8 @@ import menu from './components/Menu';
 import main from './components/Main';
 import helplist from './components/HelpList';
 import healthState from './components/HealthState';
+import CPR from './components/CPR';
+import AED from './components/AED';
 
 const App = createStackNavigator(
 	{
@@ -19,6 +21,8 @@ const App = createStackNavigator(
 		Main: {screen: main},
 		Help: {screen: helplist},
 		Health: {screen: healthState},
+		CPR: {screen: CPR},
+		AED: {screen: AED},
 	},
 	{initialRouteName: 'Home', headerMode: 'none'},
 );

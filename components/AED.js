@@ -80,22 +80,25 @@ export default class Main extends Component {
 
 	render() {
 		// const k=`./cpr/${String(this.state.count)}.png`
-		let k = require(`./cpr/1.png`);
+		let k = require(`./aed/1.png`);
 		switch(this.state.count){
 			case 1:
-				k = require(`./cpr/1.png`);
+				k = require(`./aed/1.png`);
 				break;
 			case 2:
-				k = require(`./cpr/2.png`);
+				k = require(`./aed/2.png`);
 				break;
 			case 3:
-				k = require(`./cpr/3.png`);
+				k = require(`./aed/3.png`);
 				break;
 			case 4:
-				k = require(`./cpr/4.png`);
+				k = require(`./aed/4.png`);
 				break;
 			case 5:
-				k = require(`./cpr/5.png`);
+				k = require(`./aed/5.png`);
+				break;
+			case 6:
+				k = require(`./aed/6.png`);
 				break;
 		}
 		return (
@@ -105,7 +108,7 @@ export default class Main extends Component {
 						<Text style={{color: '#FF7373', fontSize: 20}}> &lt; </Text>
 					</TouchableOpacity>
 					<View style={{flex: 2, alignItems: 'center'}}>
-						<Text style={{color: 'black', fontSize: 20}}>심폐소생술 (CPR)</Text>
+						<Text style={{color: 'black', fontSize: 20}}>자동제세동기 (AED)</Text>
 					</View>
 					<View style={{flex: 1}}>
 					</View>
@@ -127,7 +130,7 @@ export default class Main extends Component {
 						k
 					}/>
 					<TouchableOpacity style={styles.arrow} onPress={() => {
-						if (this.state.count < 5) {
+						if (this.state.count < 6) {
 							this.setState({count: this.state.count + 1});
 						}
 					}}>

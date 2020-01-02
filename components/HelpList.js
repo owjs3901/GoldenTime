@@ -81,7 +81,7 @@ export default class Main extends Component {
 				</View>
 				<View style={{flex: 1, marginBottom: 100}}>
 					<View style={styles.inner}>
-						<TouchableOpacity style={styles.con}>
+						<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('CPR')}>
 							<Image style={styles.main_inner} source={require('./cpr.png')}/>
 							<Text style={styles.sub_inner}>
 								심폐소생술 (CPR)
@@ -89,7 +89,7 @@ export default class Main extends Component {
 						</TouchableOpacity>
 					</View>
 					<View style={styles.inner}>
-						<TouchableOpacity style={styles.con}>
+						<TouchableOpacity style={styles.con} onPress={()=>this.props.navigation.navigate('AED')}>
 							<Image style={styles.main_inner} source={require('./aed.png')}/>
 							<Text style={styles.sub_inner}>
 								자동제세동기 (AED)
