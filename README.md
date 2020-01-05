@@ -10,7 +10,7 @@ LPWA를 이용하여 심박수와 GPS 정보를 위급상황에 응급처치가 
 ## 구성원
 - [오정민(팀장)](https://github.com/owjs3901/)
 - 최상원
-- 최주형
+- [최주형](https://github.com/Juhyung98)
 - 노주형
 
 ## 기술
