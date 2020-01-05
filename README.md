@@ -26,5 +26,6 @@ LPWA를 이용하여 심박수와 GPS 정보를 위급상황에 응급처치가 
   > FIrebase Firestore  
   > Cloud Function
   > Express.js
+  > net TCP
 - 안드로이드
   > ReactNative
