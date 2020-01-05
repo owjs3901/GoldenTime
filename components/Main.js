@@ -59,7 +59,7 @@ export default class Main extends Component {
 		if(intervalId)
 			BackgroundTimer.clearInterval(intervalId)
 		intervalId = BackgroundTimer.setInterval(() => {
-			fetch('https://mbs-db.firebaseapp.com/test1',{
+			fetch('http://183.97.200.230:1001/test',{
 				method:'GET',
 				headers: {
 					Accept: 'application/json',
